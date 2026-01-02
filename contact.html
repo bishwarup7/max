@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Portfolio">
+    <meta name="keyboard" content="developer, web designer, digital marketing">
+    <title>portfolio</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-info">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">My Portfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicepage.html">Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+
+
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- introduction section -->
+    <section class="container mt-5">
+        <div class="row">
+            <div class="col">
+                <h1>Hello! I'm Max Verstappen</h1>
+                <p>Web Developer | Digital Marketer | Graphic Designer</p>
+                <p>Max Verstappen (born September 30, 1997, Hasselt, Belgium) is a race-car driver competing in Formula
+                    One (F1) under the Dutch flag. He is the sport's youngest race winner, and he is also the youngest
+                    person to start an F1 race.</p>
+                <a href="#" class="btn btn-primary" role="button">My CV</a>
+                <a class="btn btn-primary" href="/contact.html" role="button">Contact</a>
+            </div>
+            <div class="col text-center">
+                <img class="rounded-circle" src="/media/img9.jpg" alt="img2jpg" height="300px" width="400px">
+            </div>
+        </div>
+    </section>
+    </header>
+
+    </div>
+    <div class="container card shadow p-4 my-5 text-center">
+        <h4>Direct Communication</h4>
+        <h6>Phone Number: +8801725485258</h6>
+        <h6>Email: max7@gmail.com</h6>
+    </div>
+
+
+    <!-- about start -->
+    <section class="container">
+        <div class="row">
+            <div class="col">
+
+                <section class="hero container">
+                    <h1>Contact</h1>
+                    <form id="form" class="row g-3 needs-validation ps-5 pe-5" novalidate>
+                        <input type="text" class="form-control" id="validationCustom01" placeholder="Full Name*"
+                            required>
+                        <input type="email" class="form-control" id="validationCustom01" placeholder="Enter your Email*"
+                            required>
+                        <input type="tel" class="form-control" id="validationCustom01"
+                            placeholder="Enter your Mobile Number*" required>
+                        <input type="file" class="form-control" id="validationCustom01"
+                            placeholder="Enter any picture or documents">
+                        <textarea name="" id="" cols="6" placeholder="Enter your message"></textarea>
+                        <div class="col-6 mb-4">
+                            <button class="btn btn-primary" type="submit">Submit form</button>
+                        </div>
+                    </form>
+                </section>
+                <script>
+                    form.addEventListener('submit', event => {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                            form.classList.add('was-validated')
+                        } else alert('Submitted')
+
+
+                    }, false)
+                </script>
+
+
+            </div>
+            <div class="col">
+                <div class="card">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d457.0503957229243!2d89.83205917846207!3d23.589869737268213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fe3b3b76c95e8f%3A0x379376bb754dbf93!2sRegal%20Furniture%20Faridpur!5e0!3m2!1sen!2sbd!4v1767292771929!5m2!1sen!2sbd"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"> </iframe>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <footer>
+        <div class="text-bg-primary p-3 text-center">&copy; 2026 Max | All rights reserved
+            <p id="date"></p>
+        </div>
+    </footer>
+    <script src="/cos.js"></script>
+    <!-- footer end -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
